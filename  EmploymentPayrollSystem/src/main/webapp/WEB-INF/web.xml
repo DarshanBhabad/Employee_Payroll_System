@@ -1,0 +1,46 @@
+<web-app xmlns="http://jakarta.ee/xml/ns/jakartaee" version="5.0">
+
+    <!-- Add Employee Servlet -->
+    <servlet>
+        <servlet-name>AddEmployeeServlet</servlet-name>
+        <servlet-class>servlet.AddEmployeeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddEmployeeServlet</servlet-name>
+        <url-pattern>/addEmployee</url-pattern>
+    </servlet-mapping>
+
+    <!-- Generate Payroll Servlet -->
+    <servlet>
+        <servlet-name>GeneratePayrollServlet</servlet-name>
+        <servlet-class>servlet.GeneratePayrollServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GeneratePayrollServlet</servlet-name>
+        <url-pattern>/generatePayroll</url-pattern>
+    </servlet-mapping>
+
+    <!-- Update Employee Servlet -->
+    <servlet>
+        <servlet-name>UpdateEmployeeServlet</servlet-name>
+        <servlet-class>servlet.UpdateEmployeeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateEmployeeServlet</servlet-name>
+        <url-pattern>/updateEmployee</url-pattern>
+    </servlet-mapping>
+
+    <!-- Delete Employee Servlet -->
+   <servlet>
+    <servlet-name>DeleteEmployeeServlet</servlet-name>
+    <servlet-class>servlet.DeleteEmployeeServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>DeleteEmployeeServlet</servlet-name>
+    <url-pattern>/deleteEmployee</url-pattern>
+</servlet-mapping>
+   
+   
+   
+
+</web-app>
